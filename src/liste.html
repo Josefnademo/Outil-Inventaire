@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liste des objets</title>
+    <link rel="stylesheet" href="accueil.css" />
+  </head>
+  <body>
+    <h1>Liste des objets</h1>
+    <ul id="liste-objets">
+      <!-- Les objets seront affichés ici dynamiquement -->
+    </ul>
+    <a href="index.html">Retour à l'accueil</a>
+
+    <script>
+      // Simulation de récupération des objets
+      document.addEventListener("DOMContentLoaded", function () {
+        let objets = ["Écran", "Chaise", "Tableau"];
+        let liste = document.getElementById("liste-objets");
+        objets.forEach((objet) => {
+          let li = document.createElement("li");
+          li.textContent = objet;
+          liste.appendChild(li);
+        });
+      });
+    </script>
+  </body>
+</html>

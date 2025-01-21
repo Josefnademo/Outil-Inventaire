@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scanner un objet</title>
+    <link rel="stylesheet" href="accueil.css" />
+  </head>
+  <body>
+    <h1>Scanner un objet</h1>
+    <button onclick="scannerObjet()">Scanner</button>
+    <p id="resultat">Résultat du scan ici</p>
+    <a href="index.html">Retour à l'accueil</a>
+
+    <script>
+      function scannerObjet() {
+        document.getElementById("resultat").textContent =
+          "Objet scanné: Écran - Salle 101";
+      }
+    </script>
+  </body>
+</html>
